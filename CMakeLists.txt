@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(cpp12922)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(lib)
+add_subdirectory(lib)
+add_executable(cpp12922 main.cpp)
+target_link_libraries(cpp12922 hello)
